@@ -1,6 +1,44 @@
-.top_img {
-  max-width: 60%;
+.top-content {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.top-content .mkt_top_img {
+  border: 1px solid red;
+  max-width: 45%;
   height: auto;
+  border-radius: 15px;
+  align-self: center;
+  margin: 2%;
+  margin-right: 2%;
+}
+.top-content .top-text {
+  border: 1px solid red;
+  width: 45%;
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  padding-left: 1.5%;
+  justify-content: center;
+}
+.top-content .top-text h2 {
+  border: 1px solid red;
+  width: 65%;
+}
+.top-content .top-text p {
+  border: 1px solid red;
+  width: 85%;
+}
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bottom-content .text-content {
+  width: 32%;
 }
 header {
   width: 100%;
