@@ -1,0 +1,39 @@
+.top_img {
+  max-width: 60%;
+  height: auto;
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: lightblue;
+  align-content: center;
+}
+header .title-box {
+  margin: 1rem;
+  width: 20%;
+  margin-right: 35%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #33373d;
+  font-size: 1.2rem;
+  display: flex;
+  align-content: flex-end;
+  margin: 0.5rem;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
