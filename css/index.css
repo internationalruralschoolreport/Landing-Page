@@ -49,6 +49,7 @@ header {
   flex-direction: row;
   background: lightblue;
   align-content: center;
+  justify-content: space-between;
 }
 @media ( max-width: 500px) {
   header {
@@ -61,18 +62,30 @@ header .title-box {
   border: 1px solid red;
   margin: 1rem;
   width: 20%;
-  margin-right: 35%;
+  margin-right: 30%;
   display: flex;
   flex-wrap: wrap;
 }
+@media ( max-width: 500px) {
+  header .title-box {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
 header nav {
   border: 1px solid red;
-  width: 40%;
+  width: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   align-content: center;
+}
+@media ( max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
 }
 header nav a {
   border: 1px solid red;

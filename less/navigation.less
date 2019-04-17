@@ -11,30 +11,43 @@ header {
     // margin: 10px;
     background: lightblue;
     align-content: center;
+    justify-content: space-between;
 
     @media @phone {
         height: auto;
         flex-direction: column;
         align-content: center;
-    
-      }
 
+      }
 
     .title-box{
         border: @red-border;
         margin: 1rem;
         width:20%;
-        margin-right: 35%;
+        margin-right: 30%;
         .display-flex-wrap;
+
+        @media @phone {
+            width: auto;
+            height: auto;
+            margin:auto;
+        
+          }
     }
 
     nav {
         border: @red-border;
-        width: 40%;
+        width: auto;
         .display-flex-wrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-end;
         align-content:center;
+
+        @media @phone {
+           flex-direction: column;
+
+        
+          }
         
 
         a {
