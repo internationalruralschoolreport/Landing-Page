@@ -1,54 +1,44 @@
 
 
 .about-content{
-  border: @red-border;
-  .display-flex-wrap;
-  justify-content: space-around;
+    position: relative;
+    text-align: center;
+    color: white;
   
-
     .abt_top_img{
-      border: @red-border;
-      max-width: 45%;
-      height: auto;
-      border-radius:15px;
-      align-self: center;
-      margin:2%;
-      margin-right:2%;
-      
-    }
-
-    .top-text{
-      border: @red-border;
-      width: 45%;
-      margin:2%;
-      .display-flex-wrap;
-      flex-direction: column;
-      align-content: flex-start;
-      padding-left: 1.5%;
-      justify-content: center;
+    //   border: @red-border;
+    width: 100%;
+    //   height: auto;
+    //   border-radius:15px;
+    //   align-self: center;
+    //   margin:2%;
+    //   margin-right:2%;
+    } 
     
-        h2{
-          border: @red-border;
-          width: 65%;
-        }
-        
-        p{
-          border: @red-border;
-          width: 85%;
-        }
-
-      // .btn {
-
-      // }
-
+    h2 {
+        // border: @red-border;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-13%, -50%);
+        font-size: 2rem;
     }
+
+
+    // h2{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
 
 }
+
 
 .bottom-content{
   // border: @red-border;
   .display-flex-wrap;
-  justify-content: center;
+  justify-content: space-around;
 
   .text-content{
     // border: @red-border;
