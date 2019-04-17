@@ -42,11 +42,13 @@
     .bio{
         border: @red-border;
         width: 24%;
-       
         .display-flex-wrap;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        position: relative;
+        height: 300px;
+        overflow: hidden;
 
         .bio-links{
             width:60%;
@@ -77,6 +79,10 @@
     }
 
 }
+
+.bio-open {
+    height: 200px;
+  }
 
 
 // .bottom-content{

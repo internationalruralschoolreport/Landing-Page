@@ -159,6 +159,9 @@ header nav a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
 }
 .team-bios .bio .bio-links {
   width: 60%;
@@ -180,4 +183,7 @@ header nav a:hover {
 }
 .team-bios .bio p {
   margin: 2%;
+}
+.bio-open {
+  height: 200px;
 }
