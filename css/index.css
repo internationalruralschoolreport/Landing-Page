@@ -145,3 +145,39 @@ header nav a:hover {
   transform: translate(-13%, -50%);
   font-size: 2rem;
 }
+.team-bios {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team-bios .bio {
+  border: 1px solid red;
+  width: 24%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.team-bios .bio .bio-links {
+  width: 60%;
+  height: auto;
+  margin: 2%;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team-bios .bio .bio_img {
+  border: 1px solid red;
+  width: 60%;
+  height: auto;
+  border-radius: 100%;
+}
+.team-bios .bio .bioButton {
+  width: 30%;
+}
+.team-bios .bio p {
+  margin: 2%;
+}
