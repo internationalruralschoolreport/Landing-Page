@@ -149,18 +149,15 @@ header nav a:hover {
   border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .team-bios .bio {
   border: 1px solid red;
-  width: 24%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  height: 300px;
+  height: 260px;
+  width: 23.5%;
+  margin: 0.64%;
   overflow: hidden;
 }
 .team-bios .bio .bio-links {
@@ -176,14 +173,13 @@ header nav a:hover {
   border: 1px solid red;
   width: 60%;
   height: auto;
-  border-radius: 100%;
-}
-.team-bios .bio .bioButton {
-  width: 30%;
+  margin: 2%;
+  margin-bottom: 5%;
 }
 .team-bios .bio p {
+  border: 1px solid red;
   margin: 2%;
 }
-.bio-open {
-  height: 200px;
+.team-bios .bio-open {
+  height: 400px;
 }

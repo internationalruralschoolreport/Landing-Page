@@ -9,12 +9,13 @@ class Bio {
   this.bioButton.addEventListener('click', () => {this.expandBio()});
  
  }
-
+ 
   // toggle to expand or hide the bio
 
   expandBio() {
+    // alert('we clicked a link!');
   this.bio.classList.toggle('bio-open');  
-  console.log('we clicked a link!')
+  // console.log('we clicked a link!');
 
    }
 

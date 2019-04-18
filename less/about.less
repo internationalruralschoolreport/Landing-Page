@@ -34,21 +34,34 @@
 
 }
 
+
+//CSS for reusable components: 
 .team-bios{
     border: @red-border;
     .display-flex-wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 
     .bio{
         border: @red-border;
-        width: 24%;
-        .display-flex-wrap;
+        display:flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        height: 300px;
+        height: 260px;
+        width: 23.5%;
+        margin: .64%;
         overflow: hidden;
+        // box-shadow: 2px 2px 2px lightgrey;
+
+
+
+        // border: @red-border;
+        // width: 24%;
+        // .display-flex-wrap;
+        // flex-direction: column;
+        // justify-content: space-around;
+        // align-items: center;
+        // position: relative;
+        // height: 300px;
+        // overflow: hidden;
 
         .bio-links{
             width:60%;
@@ -63,26 +76,28 @@
             border:@red-border;
             width: 60%;
             height:auto;
-            border-radius: 100%;
+            margin: 2%;
+            margin-bottom: 5%;
+            // border-radius: 100%;
            
         }
 
-        .bioButton{
-            width:30%;
-            
-        }
+    
 
         p{
+            border:@red-border;
             margin:2%;
         }
         
     }
 
+    .bio-open {
+        height: 400px;
+      }
+
 }
 
-.bio-open {
-    height: 200px;
-  }
+
 
 
 // .bottom-content{
