@@ -14,7 +14,7 @@ class Bio {
 
   expandBio() {
     // alert('we clicked a link!');
-  this.bio.classList.toggle('bio-open');  
+  this.bio.classList.toggle('bio-text');  
   // console.log('we clicked a link!');
 
    }

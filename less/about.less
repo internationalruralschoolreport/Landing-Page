@@ -40,14 +40,22 @@
     border: @red-border;
     .display-flex-wrap;
     justify-content: flex-start;
+    
 
     .bio{
         border: @red-border;
         display:flex;
         flex-direction: column;
-        height: 260px;
+        // height: 260px;
         width: 23.5%;
-        margin: .64%;
+        @media @phone {
+            width: 45%
+            
+        
+          }
+
+        
+        margin: .63%;
         overflow: hidden;
         // box-shadow: 2px 2px 2px lightgrey;
 
@@ -82,7 +90,9 @@
            
         }
 
-    
+       .bio-text{
+           display:none;
+       }
 
         p{
             border:@red-border;
@@ -91,8 +101,10 @@
         
     }
 
-    .bio-open {
-        height: 400px;
+     .bio-text {
+        // height: 400px;
+        display:block;
+        
       }
 
 }
