@@ -6,8 +6,9 @@ header {
     height: 65px;
     .display-flex-wrap;
     flex-direction: row;
+    color:@nav-font-color;
     // margin: 10px;
-    background: lightblue;
+    background:@header-color;
     align-content: center;
     justify-content: space-between;
 
@@ -21,7 +22,6 @@ header {
     .title-box{
         border: @red-border;
         margin: 1rem;
-        // margin-right: 30%;
         .display-flex-wrap;
 
         @media @phone {
@@ -49,7 +49,7 @@ header {
         a {
             border: @red-border;
             text-decoration: none;
-            color:@fun-gray;
+             color:@nav-font-color;
             font-size: 1.2rem;
             display:flex;
           
@@ -59,7 +59,7 @@ header {
 
         a:hover {
             text-decoration: underline;
-            color: black;
+            color: @hover-color;
     }
 
     
@@ -76,7 +76,8 @@ footer {
     .display-flex-wrap;
     flex-direction: row;
     // margin: 10px;
-    background: lightblue;
+    background:@header-color;
+    color: @nav-font-color;
     align-content: center;
     justify-content: space-between;
 
@@ -118,17 +119,16 @@ footer {
         a {
             border: @red-border;
             text-decoration: none;
-            color:@fun-gray;
+            color:@nav-font-color;
             font-size: 1.2rem;
             display:flex;
-          
             align-content:flex-end;
              margin:.5rem ;
         }
 
         a:hover {
             text-decoration: underline;
-            color: black;
+            color: @hover-color;
     }
 
     }
