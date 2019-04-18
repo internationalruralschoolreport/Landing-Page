@@ -1,40 +1,58 @@
 // Navigation Styles here
 
-
-
 header {
-     // border: @red-border;
+    border: @red-border;
     width: 100%;
-    height: auto;
+    height: 65px;
     .display-flex-wrap;
     flex-direction: row;
     // margin: 10px;
     background: lightblue;
     align-content: center;
+    justify-content: space-between;
 
+    @media @phone {
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+
+      }
 
     .title-box{
-        // border: @red-border;
+        border: @red-border;
         margin: 1rem;
-        width:20%;
-        margin-right: 35%;
+        // margin-right: 30%;
         .display-flex-wrap;
+
+        @media @phone {
+            width: auto;
+            height: auto;
+            margin:auto;
+        
+          }
     }
 
     nav {
-        //border: @red-border;
-        width: 40%;
+        border: @red-border;
+        width: auto;
         .display-flex-wrap;
+        flex-direction: row;
         justify-content: flex-end;
         align-content:center;
+
+        @media @phone {
+           flex-direction: column;
+        
+          }
         
 
         a {
-               // border: @red-border;
+            border: @red-border;
             text-decoration: none;
             color:@fun-gray;
             font-size: 1.2rem;
             display:flex;
+          
             align-content:flex-end;
              margin:.5rem ;
         }
