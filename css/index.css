@@ -17,10 +17,11 @@
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
 .top-content {
-  border: 1px solid white;
+  border-bottom: 1px solid #b2b4b6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 5%;
 }
 @media ( max-width: 500px) {
   .top-content {
@@ -29,7 +30,6 @@
   }
 }
 .top-content .mkt_top_img {
-  border: 1px solid white;
   max-width: 45%;
   height: auto;
   border-radius: 15px;
@@ -44,7 +44,6 @@
   }
 }
 .top-content .top-text {
-  border: 1px solid white;
   max-width: 45%;
   display: flex;
   flex-wrap: wrap;
@@ -59,16 +58,13 @@
   }
 }
 .top-content .top-text h2 {
-  border: 1px solid white;
   margin: 1%;
   text-align: center;
 }
 .top-content .top-text p {
-  border: 1px solid white;
   width: 85%;
 }
 .bottom-content {
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,8 +78,8 @@
   }
 }
 .bottom-content .text-content {
-  border: 1px solid white;
   width: 32%;
+  margin: 0.5%;
 }
 @media ( max-width: 500px) {
   .bottom-content .text-content {
@@ -91,9 +87,8 @@
   }
 }
 header {
-  border: 1px solid white;
   width: 100%;
-  height: 65px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -110,7 +105,6 @@ header {
   }
 }
 header .title-box {
-  border: 1px solid white;
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +117,6 @@ header .title-box {
   }
 }
 header nav {
-  border: 1px solid white;
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +130,6 @@ header nav {
   }
 }
 header nav a {
-  border: 1px solid white;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -150,12 +142,12 @@ header nav a:hover {
   color: #24e54c;
 }
 footer {
-  border: 1px solid white;
   width: 100%;
-  height: 45px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: 0;
   background: #29a0dd;
   color: white;
   align-content: center;
@@ -169,7 +161,6 @@ footer {
   }
 }
 footer .title-box {
-  border: 1px solid white;
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +173,6 @@ footer .title-box {
   }
 }
 footer nav {
-  border: 1px solid white;
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -196,7 +186,6 @@ footer nav {
   }
 }
 footer nav a {
-  border: 1px solid white;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -228,6 +217,12 @@ footer nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-bottom: 5%;
+}
+.team-bios h2 {
+  width: 100%;
+  font-size: 3REM;
+  text-align: center;
 }
 .team-bios .bio {
   border: 1px solid #b2b4b6;

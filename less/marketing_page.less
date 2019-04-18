@@ -1,9 +1,11 @@
 
 
 .top-content{
-  border: @red-border;
+  //border: @red-border;
+  border-bottom: @card-border;
   .display-flex-wrap;
   justify-content: space-around;
+  padding-bottom: 5%;
 
   @media @phone {
     flex-direction: column;
@@ -13,7 +15,7 @@
   }
   
     .mkt_top_img{
-      border: @red-border;
+      //border: @red-border;
       max-width: 45%;
       height: auto;
       border-radius:15px;
@@ -32,7 +34,7 @@
     }
 
     .top-text{
-      border: @red-border;
+      //border: @red-border;
       max-width: 45%;
       .display-flex-wrap;
       flex-direction: column;
@@ -46,14 +48,14 @@
       }
   
         h2{
-          border: @red-border;
+          //border: @red-border;
           // max-width: 65%;
           margin:1%;
           text-align: center;
         }
         
         p{
-          border: @red-border;
+          //border: @red-border;
           width: 85%;
         }
 
@@ -66,7 +68,7 @@
 }
 
 .bottom-content{
-  border: @red-border;
+  //border: @red-border;
   .display-flex-wrap;
   justify-content: center;
   width: 98%;
@@ -78,10 +80,12 @@
   }
 
   .text-content{
-    border: @red-border;
+    //border: @red-border;
     width:32%;
+    margin: .5%;
     @media @phone {
     width: 90%;
+    
     }
   }
 
