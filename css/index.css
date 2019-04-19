@@ -27,6 +27,7 @@
   .top-content {
     flex-direction: column;
     align-content: center;
+    justify-content: center;
   }
 }
 .top-content .mkt_top_img {
@@ -44,22 +45,35 @@
   }
 }
 .top-content .top-text {
-  max-width: 45%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   justify-content: center;
 }
 @media ( max-width: 500px) {
   .top-content .top-text {
-    max-width: 80%;
+    width: 80%;
     height: auto;
   }
 }
-.top-content .top-text h2 {
+.top-content .top-text .lpButton {
+  width: 45%;
+  height: 10%;
+  border-radius: 15px;
+  margin-top: 3%;
+  font-size: 1rem;
+  color: white;
+  background-color: #29a0dd;
+  box-shadow: 0 3px 3px lightgray;
+}
+.top-content .top-text .lpButton:hover {
+  background-color: #24e54c;
+}
+.top-content .top-text h1 {
   margin: 1%;
-  text-align: center;
+  text-align: left;
+  font-size: 2rem;
 }
 .top-content .top-text p {
   width: 85%;
@@ -213,7 +227,7 @@ footer nav a:hover {
   font-size: 2rem;
 }
 .team-bios {
-  border: 1px solid white;
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -243,7 +257,7 @@ footer nav a:hover {
   width: 60%;
   height: auto;
   margin: 2%;
-  border: 1px solid white;
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -256,11 +270,17 @@ footer nav a:hover {
   margin-left: 20%;
   border-radius: 100%;
 }
+.team-bios .bio .bioButton {
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
 .team-bios .bio .bio-text {
   display: none;
 }
 .team-bios .bio p {
-  border: 1px solid white;
+  border: 1px solid red;
   margin: 2%;
 }
 .team-bios .bio h4 {

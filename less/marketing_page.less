@@ -10,6 +10,7 @@
   @media @phone {
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     
 
   }
@@ -34,24 +35,42 @@
     }
 
     .top-text{
-      //border: @red-border;
-      max-width: 45%;
-      .display-flex-wrap;
+    //  border: @red-border;
+      width: 50%;
+      // padding:1%;
+      display:flex;
       flex-direction: column;
       align-content: center;
       justify-content: center;
 
       @media @phone {
-        max-width: 80%;
+        width: 80%;
         height: auto;
+      
     
       }
+
+      .lpButton {
+        width:45%;
+        height: 10%;
+        border-radius: 15px;
+        margin-top:3%;
+        font-size:1.0rem;
+        color: white;
+        background-color: @header-color;
+        box-shadow: 0 3px 3px lightgray;
+      }
+
+      .lpButton:hover {
+        background-color: @hover-color;
+      }
   
-        h2{
+        h1{
           //border: @red-border;
           // max-width: 65%;
           margin:1%;
-          text-align: center;
+          text-align:left;
+          font-size:2rem;
         }
         
         p{

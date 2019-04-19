@@ -5,7 +5,7 @@ class Bio {
 
   this.bio=bio;
   this.bioButton=this.bio.querySelector('.bioButton');
-  this.bioButton.innerText='Bio';
+  this.bioButton.innerText='Learn more';
   this.bioButton.addEventListener('click', () => {this.expandBio()});
  
  }
