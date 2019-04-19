@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 5%;
+  padding: 2%;
 }
 @media ( max-width: 500px) {
   .top-content {
@@ -35,8 +35,6 @@
   height: auto;
   border-radius: 15px;
   align-self: center;
-  margin: 2%;
-  margin-right: 1%;
 }
 @media ( max-width: 500px) {
   .top-content .mkt_top_img {
@@ -59,7 +57,7 @@
 }
 .top-content .top-text .lpButton {
   width: 45%;
-  height: 10%;
+  height: 15%;
   border-radius: 15px;
   margin-top: 3%;
   font-size: 1rem;
@@ -71,11 +69,13 @@
   background-color: #24e54c;
 }
 .top-content .top-text h1 {
+  border: 1px solid white;
   margin: 1%;
   text-align: left;
   font-size: 2rem;
 }
 .top-content .top-text p {
+  border: 1px solid white;
   width: 85%;
 }
 .bottom-content {
@@ -227,7 +227,7 @@ footer nav a:hover {
   font-size: 2rem;
 }
 .team-bios {
-  border: 1px solid red;
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -257,7 +257,7 @@ footer nav a:hover {
   width: 60%;
   height: auto;
   margin: 2%;
-  border: 1px solid red;
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -280,7 +280,7 @@ footer nav a:hover {
   display: none;
 }
 .team-bios .bio p {
-  border: 1px solid red;
+  border: 1px solid white;
   margin: 2%;
 }
 .team-bios .bio h4 {
