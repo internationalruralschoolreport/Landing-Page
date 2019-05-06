@@ -34,21 +34,39 @@
 
 }
 
+
+//CSS for reusable components: 
 .team-bios{
     border: @red-border;
     .display-flex-wrap;
-    justify-content: space-around;
-
+    justify-content: flex-start;
+    margin-bottom: 5%;
+    
+    h2{
+        width:100%;
+        font-size: 3REM;
+        text-align: center;
+    }
     .bio{
-        border: @red-border;
-        width: 24%;
-        .display-flex-wrap;
+        border: @card-border;
+        box-shadow:1.5px 1.5px rgb(225, 225, 226);
+        display:flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        height: 300px;
+        align-content: center;
+        
+        // height: 260px;
+        width: 23.5%;
+        
+        @media @phone {
+            width: 45%;
+            
+        
+          }
+
+        
+        margin: .63%;
         overflow: hidden;
+      
 
         .bio-links{
             width:60%;
@@ -60,29 +78,56 @@
         }
 
         .bio_img{
-            border:@red-border;
+            border: @avatar-border;
             width: 60%;
             height:auto;
+            margin: 5%;
+            margin-left: 20%;
             border-radius: 100%;
+             
            
         }
 
-        .bioButton{
-            width:30%;
+        .bioButton {
+            width: 40%;
+            margin-left: 30%;
+            border-radius: 10px;
+            margin-bottom: 2%;
             
         }
 
+       .bio-text{
+           display:none;
+       }
+
+     
+
         p{
+            border:@red-border;
             margin:2%;
+        }
+
+        h4{
+            width:100%;
+            background: @header-color;
+            color: @nav-font-color;
+            padding:3%;
+            font-size: 1rem;
+            margin:0;
+            text-align: center;
         }
         
     }
 
+     .bio-open .bio-text {
+        // height: 400px;
+        display:block;
+        
+      }
+
 }
 
-.bio-open {
-    height: 200px;
-  }
+
 
 
 // .bottom-content{

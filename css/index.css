@@ -1,23 +1,40 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
 .top-content {
-  border: 1px solid red;
+  border-bottom: 1px solid #b2b4b6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 2%;
 }
 @media ( max-width: 500px) {
   .top-content {
     flex-direction: column;
     align-content: center;
+    justify-content: center;
   }
 }
 .top-content .mkt_top_img {
-  border: 1px solid red;
   max-width: 45%;
   height: auto;
   border-radius: 15px;
   align-self: center;
-  margin: 2%;
-  margin-right: 1%;
 }
 @media ( max-width: 500px) {
   .top-content .mkt_top_img {
@@ -26,31 +43,42 @@
   }
 }
 .top-content .top-text {
-  border: 1px solid red;
-  max-width: 45%;
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   justify-content: center;
 }
 @media ( max-width: 500px) {
   .top-content .top-text {
-    max-width: 80%;
+    width: 80%;
     height: auto;
   }
 }
-.top-content .top-text h2 {
-  border: 1px solid red;
+.top-content .top-text .lpButton {
+  width: 45%;
+  height: 15%;
+  border-radius: 15px;
+  margin-top: 3%;
+  font-size: 1rem;
+  color: white;
+  background-color: #29a0dd;
+  box-shadow: 0 3px 3px lightgray;
+}
+.top-content .top-text .lpButton:hover {
+  background-color: #24e54c;
+}
+.top-content .top-text h1 {
+  border: 1px solid white;
   margin: 1%;
-  text-align: center;
+  text-align: left;
+  font-size: 2rem;
 }
 .top-content .top-text p {
-  border: 1px solid red;
+  border: 1px solid white;
   width: 85%;
 }
 .bottom-content {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,8 +92,8 @@
   }
 }
 .bottom-content .text-content {
-  border: 1px solid red;
   width: 32%;
+  margin: 0.5%;
 }
 @media ( max-width: 500px) {
   .bottom-content .text-content {
@@ -73,13 +101,13 @@
   }
 }
 header {
-  border: 1px solid red;
   width: 100%;
-  height: 65px;
+  height: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background: lightblue;
+  color: white;
+  background: #29a0dd;
   align-content: center;
   justify-content: space-between;
 }
@@ -91,7 +119,6 @@ header {
   }
 }
 header .title-box {
-  border: 1px solid red;
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -104,7 +131,6 @@ header .title-box {
   }
 }
 header nav {
-  border: 1px solid red;
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -118,9 +144,8 @@ header nav {
   }
 }
 header nav a {
-  border: 1px solid red;
   text-decoration: none;
-  color: #33373d;
+  color: white;
   font-size: 1.2rem;
   display: flex;
   align-content: flex-end;
@@ -128,7 +153,63 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: #24e54c;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  background: #29a0dd;
+  color: white;
+  align-content: center;
+  justify-content: space-between;
+}
+@media ( max-width: 500px) {
+  footer {
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+footer .title-box {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media ( max-width: 500px) {
+  footer .title-box {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+footer nav {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+@media ( max-width: 500px) {
+  footer nav {
+    flex-direction: column;
+  }
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-content: flex-end;
+  margin: 0.5rem;
+}
+footer nav a:hover {
+  text-decoration: underline;
+  color: #24e54c;
 }
 .about-content {
   position: relative;
@@ -146,44 +227,79 @@ header nav a:hover {
   font-size: 2rem;
 }
 .team-bios {
-  border: 1px solid red;
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+}
+.team-bios h2 {
+  width: 100%;
+  font-size: 3REM;
+  text-align: center;
 }
 .team-bios .bio {
-  border: 1px solid red;
-  width: 24%;
+  border: 1px solid #b2b4b6;
+  box-shadow: 1.5px 1.5px #e1e1e2;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  height: 300px;
+  align-content: center;
+  width: 23.5%;
+  margin: 0.63%;
   overflow: hidden;
+}
+@media ( max-width: 500px) {
+  .team-bios .bio {
+    width: 45%;
+  }
 }
 .team-bios .bio .bio-links {
   width: 60%;
   height: auto;
   margin: 2%;
-  border: 1px solid red;
+  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .team-bios .bio .bio_img {
-  border: 1px solid red;
+  border: 1px solid #29a0dd;
   width: 60%;
   height: auto;
+  margin: 5%;
+  margin-left: 20%;
   border-radius: 100%;
 }
 .team-bios .bio .bioButton {
-  width: 30%;
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+.team-bios .bio .bio-text {
+  display: none;
 }
 .team-bios .bio p {
+  border: 1px solid white;
   margin: 2%;
 }
-.bio-open {
-  height: 200px;
+.team-bios .bio h4 {
+  width: 100%;
+  background: #29a0dd;
+  color: white;
+  padding: 3%;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+.team-bios .bio-open .bio-text {
+  display: block;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  background-color: #ffffff;
+  color: slategray;
 }
